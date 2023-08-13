@@ -28,7 +28,7 @@ class PublicUserApiTests(TestCase):
     def test_create_user_success(self):
         """ test creating a user a successfull"""
 
-        payload ={
+        payload = {
             'email': 'test@example.com',
             'password': 'testpass123',
             'name': 'Test Name',
@@ -43,7 +43,7 @@ class PublicUserApiTests(TestCase):
     def test_user_with_email_exists_error(self):
         """  test error returned if email exists"""
 
-        payload ={
+        payload = {
             'email': 'test@example.com',
             'password': 'testpass123',
             'name': 'Test Name',
@@ -55,7 +55,7 @@ class PublicUserApiTests(TestCase):
     def test_password_too_short_error(self):
         """ return error if password is short"""
 
-        payload ={
+        payload = {
             'email': 'test@example.com',
             'password': 'pw',
             'name': 'Test Name',

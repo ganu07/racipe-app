@@ -9,4 +9,3 @@ from user.serializers import UserSerializer
 class CreateUserView(generics.CreateAPIView):
     """create new user api in sysytem"""
     serializer_class = UserSerializer
-
