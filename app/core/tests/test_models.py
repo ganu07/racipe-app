@@ -70,4 +70,3 @@ class ModelTests(TestCase):
         )
 
         self.assertEqual(str(recipe), recipe.title)
-
